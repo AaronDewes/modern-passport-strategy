@@ -1,18 +1,11 @@
-# passport-strategy
-
-[![Build](https://travis-ci.org/jaredhanson/passport-strategy.png)](https://travis-ci.org/jaredhanson/passport-strategy)
-[![Coverage](https://coveralls.io/repos/jaredhanson/passport-strategy/badge.png)](https://coveralls.io/r/jaredhanson/passport-strategy)
-[![Quality](https://codeclimate.com/github/jaredhanson/passport-strategy.png)](https://codeclimate.com/github/jaredhanson/passport-strategy)
-[![Dependencies](https://david-dm.org/jaredhanson/passport-strategy.png)](https://david-dm.org/jaredhanson/passport-strategy)
-[![Tips](http://img.shields.io/gittip/jaredhanson.png)](https://www.gittip.com/jaredhanson/)
-
+# modern-passport-strategy
 
 An abstract class implementing [Passport](http://passportjs.org/)'s strategy
 API.
 
 ## Install
 
-    $ npm install passport-strategy
+    $ npm install modern-passport-strategy
 
 ## Usage
 
@@ -26,7 +19,7 @@ middleware for authentication.
 Create a new `CustomStrategy` constructor which inherits from `Strategy`:
 
 ```javascript
-var util = require('util')
+const util = require('util')
   , Strategy = require('passport-strategy');
 
 function CustomStrategy(...) {

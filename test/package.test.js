@@ -1,16 +1,14 @@
 /* global describe, it, expect */
 
-var strategy = require('..');
+const strategy = require('..');
 
-describe('passport-strategy', function() {
-    
-  it('should export Strategy constructor directly from package', function() {
-    expect(strategy).to.be.a('function');
-    expect(strategy).to.equal(strategy.Strategy);
-  });
-  
-  it('should export Strategy constructor', function() {
-    expect(strategy.Strategy).to.be.a('function');
-  });
-  
+describe('passport-strategy', () => {
+	it('should export Strategy constructor directly from package', () => {
+		expect(strategy).to.be.a('function');
+		expect(strategy).to.equal(strategy.Strategy);
+	});
+
+	it('should export Strategy constructor', () => {
+		expect(strategy.Strategy).to.be.a('function');
+	});
 });

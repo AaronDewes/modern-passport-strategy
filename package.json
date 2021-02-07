@@ -1,40 +1,36 @@
 {
-  "name": "passport-strategy",
-  "version": "1.0.0",
+  "name": "modern-passport-strategy",
+  "version": "1.0.1",
   "description": "An abstract class implementing Passport's strategy API.",
   "keywords": [
     "passport",
     "strategy"
   ],
   "author": {
-    "name": "Jared Hanson",
-    "email": "jaredhanson@gmail.com",
-    "url": "http://www.jaredhanson.net/"
+    "name": "Aaron Dewes",
+    "email": "aaron.dewes@web.de"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/jaredhanson/passport-strategy.git"
+    "url": "git://github.com/AaronDewes/modern-passport-strategy.git"
   },
   "bugs": {
-    "url": "http://github.com/jaredhanson/passport-strategy/issues"
+    "url": "http://github.com/AaronDewes/modern-passport-strategy/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://www.opensource.org/licenses/MIT"
-    }
-  ],
+  "license": "MIT",
   "main": "./lib",
   "dependencies": {
   },
   "devDependencies": {
-    "mocha": "1.x.x",
-    "chai": "1.x.x"
+    "mocha": "^8.2.1",
+    "chai": "^4.3.0",
+    "xo": "^0.37.1"
   },
   "engines": {
-    "node": ">= 0.4.0"
+    "node": ">= 8.0.0"
   },
   "scripts": {
-    "test": "node_modules/.bin/mocha --reporter spec --require test/bootstrap/node test/*.test.js"
+    "test": "mocha --reporter spec --require test/bootstrap/node test/*.test.js",
+    "lint": "xo"
   }
 }
